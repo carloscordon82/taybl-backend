@@ -13,7 +13,7 @@ var app = express();
 app.use(
   cors({
     credentials: true,
-    origin: process.env.ORIGIN || "taybl.netlify.app",
+    origin: process.env.ORIGIN || "taybl.netlify.app:" + process.env.PORT,
   })
 );
 
