@@ -33,6 +33,8 @@ app.use(
     secret: "some secret goes here",
     resave: true,
     saveUninitialized: false,
+    sameSite: "none",
+    maxAge: 60000000,
   })
 );
 
