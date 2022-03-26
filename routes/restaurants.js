@@ -42,8 +42,7 @@ router.get("/:restaurantId", function (req, res, next) {
         url: `https://worldwide-restaurants.p.rapidapi.com/photos?language=en_US&limit=30&location_id=${restaurant.location_id}&currency=USD`,
         headers: {
           "content-type": "application/x-www-form-urlencoded",
-          "x-rapidapi-key":
-            "b946aae34fmsh91f12059fc24238p124c36jsna1ad48fae90e",
+          "x-rapidapi-key": process.env.RAPID,
           "x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com",
 
           useQueryString: "true",
