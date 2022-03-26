@@ -141,6 +141,7 @@ router.post("/login", (req, res, next) => {
       }
 
       // We are now logged in (that's why we can also send req.user)
+      console.log("THE USER", theUser);
       res.status(200).json(theUser);
     });
   })(req, res, next);
@@ -153,6 +154,7 @@ router.post("/logout", (req, res, next) => {
 });
 
 router.get("/status", (req, res, next) => {
+  console.log("AUTH", req.isAuthenticated(), "USER", req.user);
   // req.isAuthenticated() is defined by passport
   if (req.isAuthenticated()) {
     res.status(200).json(req.user);
