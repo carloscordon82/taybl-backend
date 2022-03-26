@@ -35,6 +35,7 @@ app.use(
     saveUninitialized: false,
     sameSite: "none",
     maxAge: 60000000,
+    secure: true,
   })
 );
 
