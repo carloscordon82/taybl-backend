@@ -9,6 +9,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 var app = express();
+app.set("trust proxy", 1);
 
 app.use(
   cors({
