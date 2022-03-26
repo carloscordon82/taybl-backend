@@ -32,7 +32,7 @@ app.use(
   session({
     secret: "some secret goes here",
     resave: true,
-    saveUninitialized: false,
+    saveUninitialized: true,
     proxy: true,
     sameSite: "none",
     maxAge: 60000000,
