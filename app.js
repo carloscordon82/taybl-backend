@@ -33,6 +33,7 @@ app.use(
     secret: "some secret goes here",
     resave: true,
     saveUninitialized: false,
+    proxy: true,
     sameSite: "none",
     maxAge: 60000000,
     secure: true,
